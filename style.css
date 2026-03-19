@@ -257,6 +257,14 @@ main {
     overflow: hidden;
 }
 
+.img-jardin{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
 #img-gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -302,4 +310,76 @@ main {
 #map{
     width: 900px;
     height: 500px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    #headerNavbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main-contentContact {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .main-content{
+        width: 80%;
+        height: auto;
+    }
+
+    .main-contentChambres {
+        width: 90%;
+    }
+
+    .mainChambres-text {
+        font-size: 0.9rem;
+    }
+
+    #div-main-imgChambres {
+        width: 100%;
+    }
+
+    #div-img-chambres {
+        /*flex-direction: column;*/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .img-chambres {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-jardin {
+        width: 100%;
+        height: 100%;
+    }
+
+    #ContactInfoContainer {
+        width: 100%;
+    }
+
+    #mapContainer {
+        width: 100%;
+    }
+
+    #footer {
+        flex-direction: column;
+        gap: 1rem;
+        font-size: smaller;
+    }
+
+    .main-logoContact {
+        width: 40%;
+    }
+
+    .button-contact {
+        margin-bottom: 1rem;
+    }
 }
